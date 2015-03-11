@@ -9,7 +9,7 @@ var url = require('url');
 var pages = [
 	{id: '1', route: '/', output: 'Hello, Node.js'},
 	{id: '2', route: '/another page', output: function() {return 'route -> '+this.route;}},
-	{id: '3', route: '/about', output: 'シンプルなサンプルコードです'},
+	{id: '3', route: '/about', output: 'シンプルなサンプルコードです'}
 ];
 
 http.createServer(function (request, response) {

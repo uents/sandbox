@@ -12,7 +12,7 @@ var pages = [
 	{route: '/about', output: 'シンプルなサンプルコードです'},
 	{route: '/about/this', output: '複数階層ルーティングの例'},
 	{route: '/about/node', output: 'Evented I/O for V8 Javascript'},
-	{route: '/about/page', output: function() {return 'route -> '+this.route;}},
+	{route: '/about/page', output: function() {return 'route -> '+this.route;}}
 //	{route: '/about', childRoutes: [
 //		{route: '/this', output: '複数階層ルーティングの例'},
 //		{route: '/node', output: 'Evented I/O for V8 Javascript'}
