@@ -31,3 +31,14 @@ console.log(name, age);
 // ネストしたオブジェクトからの抽出
 var {foo: {bar: [, x]}} = {foo: {bar: [1, 2, 3]}}
 console.log(x);
+
+// 変数への分割代入
+var regex = /(\d{4})(\d{2})(\d{2})/;
+var date = regex.exec("20161122");
+console.log(date[1], date[2], date[3]);
+
+// 関数引数での分割代入
+function foo({a, b}) {
+  console.log(a, b);
+}
+foo({a: 1, b: 2});

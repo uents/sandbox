@@ -59,3 +59,17 @@ var _foo = { foo: { bar: [1, 2, 3] } },
     x = _foo$foo$bar[1];
 
 console.log(x);
+
+// 変数への分割代入
+var regex = /(\d{4})(\d{2})(\d{2})/;
+var date = regex.exec("20161122");
+console.log(date[1], date[2], date[3]);
+
+// 関数引数での分割代入
+function foo(_ref3) {
+  var a = _ref3.a,
+      b = _ref3.b;
+
+  console.log(a, b);
+}
+foo({ a: 1, b: 2 });
